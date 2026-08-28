@@ -14,7 +14,8 @@ public class TarefasController {
     private final TarefasService tarefasService;
 
     @PostMapping
-    public ResponseEntity<TarefasDTO> gravarTarefas(@RequestBody TarefasDTO dto, @RequestHeader("Autorization") String token){
+    public ResponseEntity<TarefasDTO> gravarTarefas(@RequestBody TarefasDTO dto, @RequestHeader("Authorization") String token){
         return ResponseEntity.ok(tarefasService.gravarTarefa(token, dto));
     }
+
 }
