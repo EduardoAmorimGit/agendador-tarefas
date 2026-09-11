@@ -23,4 +23,6 @@ public class UserDetailsServiceImpl {
                 .password(usuarioDTO.getSenha()) // Define a senha do usuárioo
                 .build();
     }
+
+
 }
